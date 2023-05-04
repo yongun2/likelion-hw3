@@ -17,8 +17,10 @@ from django.contrib import admin
 from django.urls import path
 
 from demos.views import calculator
+from lotto.views import lotto
 
 urlpatterns = [
     path("admin/", admin.site.urls),
     path("calculator/", calculator),
+    path("lotto/", lotto)
 ]
